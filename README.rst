@@ -1,4 +1,14 @@
 
+**Note:** This fork exists for people who want to run Rope commands
+without having to actually open a Python file.
+
+e.g. If you want to run `RopeOpenProject` on-startup but you
+accidentally opened a markdown file, the command won't fail like in the
+original ropevim.
+
+The downside to doing this though is that all the Rope commands will be
+visible outside of Python files.
+
 
 ======================
  ropevim, rope in vim
