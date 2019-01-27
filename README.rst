@@ -1,8 +1,4 @@
 
-**Note:** *Please note that this project has been moved to* `GitHub python-rope / ropevim`_
-
-.. _GitHub python-rope / ropevim: https://github.com/python-rope/ropevim
-
 
 ======================
  ropevim, rope in vim
