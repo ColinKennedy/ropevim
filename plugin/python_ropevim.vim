@@ -3,7 +3,7 @@ if !has("python")
 endif
 
 function! LoadRope()
-python << EOF
+pythonx << EOF
 import ropevim
 from rope_omni import RopeOmniCompleter
 EOF
@@ -17,9 +17,9 @@ call LoadRope()
 function! RopeCompleteFunc(findstart, base)
     " A completefunc for python code using rope
     if (a:findstart)
-        py ropecompleter = RopeOmniCompleter(vim.eval("a:base"))
-        py vim.command("return %s" % ropecompleter.start)
+        pythonx ropecompleter = RopeOmniCompleter(vim.eval("a:base"))
+        pythonx vim.command("return %s" % ropecompleter.start)
     else
-        py vim.command("return %s" % ropecompleter.complete(vim.eval("a:base")))
+        pythonx vim.command("return %s" % ropecompleter.complete(vim.eval("a:base")))
     endif
 endfunction
